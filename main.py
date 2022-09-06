@@ -32,7 +32,7 @@ if direction == "left":
 elif direction=="right":
   swim_or_wait= input("You've arrived to a river. Would you like to swim across or wait for a boat to come? Write 'swim' or 'wait' as your response.\n").lower()
   if swim_or_wait=="swim":
-    print('''  {{{}}}}}}.
+    print('''              {{{}}}}}}.
              {{{{{}}}}}}}.
             {{{{  {{{{{}}}}
            }}}}} _   _ {{{{{
@@ -88,11 +88,16 @@ elif direction=="right":
     print("Oh no! You have been attacked by a gorgeous but vicious mermaid. Game over!")
   elif swim_or_wait == "wait":
       door= input("Great! You have arrived to your final destination. Please choose a door to enter the treasure vault. Is it going to be the red, blue or yellow one? Careful! One wrong move, and you lose the game! \n").lower()
-      if door== "red":
-        print("Oh God! You woke up the furious gladiator! ⚔️ Game over!")
+    
+      if door == "red":
+        print("Oh God! You woke up the furious gladiator! ⚔️  Game over!")
       elif door=="yellow":
           print("So close! You fell through a trap door straight into a lion pit! 🦁 Game over!")
       elif door=="blue":
             print("Yay! You have won! The treasure is yours! 🪙 ")
+      else:
+        print("Invalid response.")
       
+
+
 
